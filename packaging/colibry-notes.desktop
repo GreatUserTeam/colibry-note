@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Notes
+Name[ru]=Заметки
+Name[uk]=Нотатки
+Comment=Write notes that are saved automatically
+Comment[ru]=Заметки с автоматическим сохранением
+Exec=colibry-notes
+Icon=colibry-notes
+Terminal=false
+Categories=Utility;TextEditor;
+Keywords=notes;memo;text;write;
+StartupNotify=true
