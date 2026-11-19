@@ -1,0 +1,16 @@
+<Window Title="Notes - Colibry OS" Width="800" Height="500" MinWidth="520" MinHeight="320">
+    <Shortcut Keys="Ctrl+N" Action="notes.new"/>
+    <Shortcut Keys="Escape" Action="app.quit"/>
+    <VBox Spacing="12" Slot.Padding="16">
+        <HBox Spacing="8">
+            <TextInput Name="search" Placeholder="Search notes" Slot.Fill="1"/>
+            <Button Name="new" Text="New note" Style="Primary" OnClicked="notes.new"/>
+            <Button Name="delete" Text="Delete" OnClicked="notes.delete"/>
+        </HBox>
+        <HBox Spacing="12" Slot.Fill="1">
+            <ListView Name="list" Width="250"/>
+            <TextEditor Name="editor" Placeholder="Write a note..." Wrap="true" Slot.Fill="1"/>
+        </HBox>
+        <Label Name="status" TextSize="12"/>
+    </VBox>
+</Window>
